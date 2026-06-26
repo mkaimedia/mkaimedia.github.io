@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>利用目的別 AI分類リスト</title>
+    <title>利用目的別 AI分類リスト（リンク付き）</title>
     <style>
         body {
             font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -32,25 +32,41 @@
             font-size: 1.3rem;
             color: #2980b9;
             margin-top: 0;
-            margin-bottom: 10px;
-            display: flex;
-            align-items: center;
+            margin-bottom: 15px;
+            border-left: 5px solid #2980b9;
+            padding-left: 10px;
         }
-        ul {
-            margin: 0;
-            padding-left: 20px;
+        .ai-item {
+            margin-bottom: 15px;
         }
-        li {
-            margin-bottom: 8px;
+        .ai-name {
+            font-weight: bold;
+            color: #2c3e50;
         }
-        strong {
-            color: #e74c3c;
+        .ai-link {
+            display: inline-block;
+            margin-left: 10px;
+            font-size: 0.9rem;
+            color: #3498db;
+            text-decoration: none;
+            background-color: #eaf2f8;
+            padding: 2px 8px;
+            border-radius: 4px;
+        }
+        .ai-link:hover {
+            background-color: #3498db;
+            color: #fff;
+        }
+        .description {
+            margin: 5px 0 0 15px;
+            font-size: 0.95rem;
+            color: #555;
         }
         .back-link {
             display: block;
             text-align: center;
-            margin-top: 30px;
-            color: #3498db;
+            margin-top: 40px;
+            color: #7f8c8d;
             text-decoration: none;
         }
         .back-link:hover {
@@ -64,42 +80,66 @@
 
     <div class="category">
         <h2 class="category-title">✍️ 文章作成・ビジネス効率化</h2>
-        <ul>
-            <li><strong>生成AI (LLM):</strong> 文章の執筆、メールの作成、企画案のブレインストーミング、長文の要約</li>
-            <li><strong>翻訳AI:</strong> 多言語への高精度な翻訳、ニュアンスを考慮した表現の変換</li>
-        </ul>
+        
+        <div class="ai-item">
+            <span class="ai-name">ChatGPT</span>
+            <a href="https://chatgpt.com/" target="_blank" class="ai-link">公式サイト ↗</a>
+            <p class="description">文章の執筆、メール作成、アイデア出しなど、多目的に使える対話型AIの代表格。</p>
+        </div>
+
+        <div class="ai-item">
+            <span class="ai-name">Claude</span>
+            <a href="https://claude.ai/" target="_blank" class="ai-link">公式サイト ↗</a>
+            <p class="description">自然で高精度な文章作成や、長文の要約、論理的な分析がプロレベルで得意なAI。</p>
+        </div>
+
+        <div class="ai-item">
+            <span class="ai-name">DeepL</span>
+            <a href="https://www.deepl.com/" target="_blank" class="ai-link">公式サイト ↗</a>
+            <p class="description">直訳っぽさを排除し、文脈に合わせた自然な表現に翻訳してくれるAI翻訳サービス。</p>
+        </div>
     </div>
 
     <div class="category">
         <h2 class="category-title">🎨 画像生成・デザイン・編集</h2>
-        <ul>
-            <li><strong>画像生成AI:</strong> イラスト、Webサイトの素材、ロゴ、コンセプトアートの自動作成</li>
-            <li><strong>画像認識・編集AI:</strong> 写真の背景自動消去、画質の高精細化、写真に写った物の識別</li>
-        </ul>
+        
+        <div class="ai-item">
+            <span class="ai-name">Midjourney</span>
+            <a href="https://www.midjourney.com/" target="_blank" class="ai-link">公式サイト ↗</a>
+            <p class="description">超高精細で芸術的なイラストや、リアルな写真風の画像を呪文（プロンプト）から生成するAI。</p>
+        </div>
+
+        <div class="ai-item">
+            <span class="ai-name">v0 (by Vercel)</span>
+            <a href="https://v0.dev/" target="_blank" class="ai-link">公式サイト ↗</a>
+            <p class="description">言葉で指示するだけで、Webサイトのデザインやパーツのコードを自動生成してくれる開発向けAI。</p>
+        </div>
     </div>
 
     <div class="category">
         <h2 class="category-title">🎵 音声・音楽・動画制作</h2>
-        <ul>
-            <li><strong>音声合成AI:</strong> テキストの音声読み上げ、ナレーション作成、キャラクターボイスの生成</li>
-            <li><strong>音声認識AI:</strong> 会議や動画の自動文字起こし、リアルタイム字幕作成</li>
-            <li><strong>音楽生成AI:</strong> 指定したジャンルや雰囲気に応じたBGMや楽曲の自動作曲</li>
-        </ul>
+        
+        <div class="ai-item">
+            <span class="ai-name">Suno AI</span>
+            <a href="https://suno.com/" target="_blank" class="ai-link">公式サイト ↗</a>
+            <p class="description">作りたい音楽のジャンルや歌詞を入力するだけで、ボーカル入りの本格的な楽曲を数秒で作るAI。</p>
+        </div>
+
+        <div class="ai-item">
+            <span class="ai-name">Vrew</span>
+            <a href="https://vrew.voyagerx.com/" target="_blank" class="ai-link">公式サイト ↗</a>
+            <p class="description">音声認識で動画の文字起こしを行い、カット編集やAI音声でのナレーション挿入が簡単にできる動画編集ツール。</p>
+        </div>
     </div>
 
     <div class="category">
-        <h2 class="category-title">📊 予測・データ分析</h2>
-        <ul>
-            <li><strong>予測AI:</strong> 売上予測、株価・気象の予測、将来のトレンド分析</li>
-            <li><strong>異常検知AI:</strong> 工場の製品チェック（不良品の自動検出）、クレジットカードの不正利用検知</li>
-        </ul>
-    </div>
-
-    <div class="category">
-        <h2 class="category-title">💬 カスタマーサポート・対話</h2>
-        <ul>
-            <li><strong>対話型AIチャットボット:</strong> 24時間体制のカスタマーサポート、問い合わせの自動一次対応</li>
-        </ul>
+        <h2 class="category-title">🔍 検索・リサーチ</h2>
+        
+        <div class="ai-item">
+            <span class="ai-name">Perplexity</span>
+            <a href="https://www.perplexity.ai/" target="_blank" class="ai-link">公式サイト ↗</a>
+            <p class="description">インターネット上の最新情報を検索し、根拠となるソース（情報元）を明記しながら回答をまとめてくれる検索型AI。</p>
+        </div>
     </div>
 
     <a href="index.html" class="back-link">← トップページに戻る</a>
