@@ -1,0 +1,122 @@
+/* 全体のリセットと共通設定 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #faf8f5; /* 優しいオフホワイト */
+}
+
+/* ヘッダー */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    color: #8B5A2B; /* コーヒーブラウン */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #8B5A2B;
+}
+
+/* メインビジュアル */
+.main-visual {
+    height: 60vh;
+    /* 背景には仮のカフェ画像（Unsplashより）を適用 */
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?q=80&w=1200');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.mv-text h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.mv-text p {
+    font-size: 18px;
+}
+
+/* コンセプト */
+.concept {
+    max-width: 800px;
+    margin: 80px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.concept h3 {
+    font-size: 28px;
+    color: #8B5A2B;
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.concept h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 2px;
+    background-color: #8B5A2B;
+}
+
+.concept p {
+    font-size: 16px;
+    color: #666;
+    letter-spacing: 1px;
+}
+
+/* フッター */
+footer {
+    background-color: #332211;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
